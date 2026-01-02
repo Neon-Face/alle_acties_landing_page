@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Acties - Alle supermarkt aanbiedingen in één app</title>
+    <style>
+        /* --- General Styling & Variables --- */
+        :root {
+            --primary-color: #FF6600; /* Jouw merk-oranje */
+            --dark-text: #333;
+            --light-text: #666;
+            --background-color: #f9f9f9;
+            --white-color: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header & Hero Section --- */
+        header {
+            background-color: var(--primary-color);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white-color);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header .logo {
+            max-width: 120px; /* Pas de grootte van je logo aan */
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .download-buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- App Screenshot Section --- */
+        .app-showcase {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .app-showcase img {
+            max-width: 80%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* --- Features Section --- */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        .feature {
+            text-align: center;
+        }
+        
+        .feature h3 {
+            color: var(--primary-color);
+        }
+
+        /* --- Privacy Policy Section --- */
+        #privacy-policy {
+            background-color: var(--white-color);
+            padding: 40px 20px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        
+        #privacy-policy h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--light-text);
+            font-size: 0.9em;
+        }
+
+        /* --- Responsive Design for Desktops --- */
+        @media (min-width: 768px) {
+            .features {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ======================= -->
+    <!--      HEADER / HERO      -->
+    <!-- ======================= -->
+    <header>
+        <!-- PLAATS HIER JE LOGO (vervang src) -->
+        <img src="assets/images/logo_for_icon.png" alt="Alle Acties Logo" class="logo">
+        
+        <h1>Alle Acties</h1>
+        <p>Alle supermarkt aanbiedingen in één app. Bespaar tijd en geld!</p>
+        
+        <div class="download-buttons">
+            <!-- VERVANG '#' MET JE APP STORE LINK -->
+            <a href="#" class="cta-button">Download voor iOS</a>
+            <!-- VERVANG '#' MET JE GOOGLE PLAY LINK -->
+            <a href="#" class="cta-button">Download voor Android</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ======================= -->
+        <!--     APP SHOWCASE      -->
+        <!-- ======================= -->
+        <section class="app-showcase">
+             <!-- PLAATS HIER EEN SCREENSHOT VAN JE APP -->
+            <img src="https://via.placeholder.com/400x800" alt="App screenshot">
+        </section>
+
+        <!-- ======================= -->
+        <!--       FEATURES        -->
+        <!-- ======================= -->
+        <section class="features">
+            <div class="feature">
+                <h3>Multi-Supermarkt</h3>
+                <p>Vergelijk aanbiedingen van Albert Heijn, Jumbo, Lidl, PLUS en meer, allemaal op één plek.</p>
+            </div>
+            <div class="feature">
+                <h3>Slimme Lijstjes</h3>
+                <p>Stel je boodschappenlijst samen en zie direct hoeveel je bespaart op je favoriete producten.</p>
+            </div>
+            <div class="feature">
+                <h3>Favorieten Bewaren</h3>
+                <p>Sla producten op in je wishlist en houd de prijzen in de gaten, week na week.</p>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!--    PRIVACY POLICY     -->
+        <!-- ======================= -->
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p><strong>Laatst bijgewerkt:</strong> 29 december 2025</p>
+            <p>Uw privacy is belangrijk voor ons. Deze privacyverklaring legt uit welke persoonlijke gegevens Alle Acties van u verzamelt en hoe we die gegevens gebruiken.</p>
+            <p><strong>Gegevens die we verzamelen:</strong><br>
+            Alle Acties verzamelt gegevens om effectief te kunnen werken en u de beste ervaringen met onze producten te kunnen bieden. U verstrekt sommige van deze gegevens rechtstreeks, zoals wanneer u een account aanmaakt. De gegevens die we verzamelen kunnen het volgende omvatten: E-mailadres en authenticatiegegevens.</p>
+            <p><strong>Hoe we gegevens gebruiken:</strong><br>
+            We gebruiken de gegevens die we verzamelen om de services die we aanbieden te leveren, te verbeteren en te personaliseren. We gebruiken de gegevens ook om met u te communiceren, bijvoorbeeld om u te informeren over uw account en productupdates.</p>
+            <p>We delen uw persoonlijke gegevens niet met derden zonder uw toestemming, behalve zoals beschreven in dit beleid.</p>
+        </section>
+
+    </main>
+
+    <!-- ======================= -->
+    <!--        FOOTER         -->
+    <!-- ======================= -->
+    <footer>
+        <p>&copy; 2025 Alle Acties. Alle rechten voorbehouden.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
